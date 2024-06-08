@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arle juegos de arcade interactivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <header>
+        <h2 class="logo">AIAG</h2>
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">catalogo</a>
+            <a href="acerca.html">Acerca de</a>
+            <a class="imgcarrito" href="carrito.html"><img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" height="50" alt=""></a>
+            <a href="contacto.html">Contacto</a>
+            <button class="btnLogin-popup">Iniciar Sesión</button>
+        </nav>
+    </header>
+    <div class="texto">
+        <main>
+        <h1>Bienvenidos</h1>
+        <h3>Arle Interactive Arcade Games</h3>
+        <p>La mejor tienda online de videojuegos</p>
+        <div class="container">
+  <a href="catalogo.html"><button class="button">Catalogo</button></a>
+</div>
+
+    </main>
+</div>    
+    
+      
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div id="login-form" class="form-box active">
+            <h2 style="color: white;">Iniciar Sesión</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label style="color: white;">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label style="color: white;">Contraseña</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" style="color: white;"> Recuérdame</label>
+                    <a href="#" class="forgot-link" style="color: white;">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button type="submit" class="btn" style="color: white;">Iniciar Sesión</button>
+                <div class="login-register">
+                    <p>¿No tienes una cuenta? <a href="#" class="register-link" style="color: white;">Regístrate</a></p>
+                </div>
+                
+            </form>
+        </div>
+
+        <div id="register-form" class="form-box">
+            <h2>Registro</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Nombre de usuario</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Contraseña</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Acepto los términos y condiciones</label>
+                </div>
+                <button type="submit" class="btn">Registrarse</button>
+                <div class="login-register">
+                    <p>¿Ya tienes una cuenta? <a href="#" class="login-link">Iniciar Sesión</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div id="forgot-form" class="form-box">
+            <h2>Restablecer Contraseña</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <button type="submit" class="btn">Restablecer</button>
+                <div class="login-register">
+                    <p>¿Recordaste tu contraseña? <a href="#" class="login-link">Iniciar Sesión</a></p>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+
+
+
+

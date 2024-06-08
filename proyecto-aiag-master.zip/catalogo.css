@@ -1,0 +1,241 @@
+/* Reset de estilos */
+header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.3), 0 0 40px rgba(0, 255, 255, 0.2), 0 0 50px rgba(0, 255, 255, 0.1); /* Sombras azul neon */
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://i.pinimg.com/originals/d0/e0/e2/d0e0e259bf0aba4da742bedff1d4b8a5.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para el encabezado */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+/* Estilos para el logo */
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+/* Estilos para los enlaces de navegación */
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.imgcarrito{
+    position: absolute;
+    width: 100px;
+    top: 20px;
+    height: 90%;
+    filter: invert(100%);
+}
+html,
+body{
+    position: relative;
+    height: 100%;
+}
+body{
+    background-color: #323232;
+    font-family: Helvetica Neue, Helvetica;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper{
+    width: 100%;
+    padding: 150px 0 50px 0;
+
+}
+.swiper-slide{
+    background: url(https://i.pinimg.com/originals/e7/75/fc/e775fcdbeed95cf66e67228315a5e047.gif);
+    border-radius: 10%;
+    background-size: cover ;
+    background-position: center;
+    width: 300px;
+    height: 500px;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+}
+
+@keyframes iconColorChange {
+    0% {
+        color: #CA2DCA;
+    }
+    25% {
+        color: #FF0000;
+    }
+    50% {
+        color: #00FF00;
+    }
+    75% {
+        color: #0000FF;
+    }
+    100% {
+        color: #CA2DCA;
+    }
+}
+
+@keyframes imgColorChange {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    25% {
+        filter: hue-rotate(90deg);
+    }
+    50% {
+        filter: hue-rotate(180deg);
+    }
+    75% {
+        filter: hue-rotate(270deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #CA2DCA;
+    animation: iconColorChange 4s infinite;
+}
+
+.icons img {
+    width: 120px;
+    animation: imgColorChange 4s infinite;
+}
+
+.product-content{
+    display: flex;
+    justify-content: space-between;
+}
+.product-txt{
+    flex-basis: 50%;
+    text-align: left;
+}
+@keyframes textColorChange {
+    0% {
+        color: #CA2DCA;
+    }
+    25% {
+        color: #FF0000;
+    }
+    50% {
+        color: #00FF00;
+    }
+    75% {
+        color: #0000FF;
+    }
+    100% {
+        color: #CA2DCA;
+    }
+}
+
+.product-txt span {
+    font-size: 25px;
+    color: #CA2DCA;
+    font-weight: bold;
+    animation: textColorChange 4s infinite;
+}
+
+.product-txt h3{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.product-txt p{
+    font-size: 14px;
+    color: #c4c4c4;
+}
+.product-img{
+    flex-basis: 50%;
+    text-align: right;
+}
+.product-img img{
+    width: 120px;
+}
+
+@keyframes borderColorChange {
+    0% {
+        border-color: #CA2DCA;
+    }
+    25% {
+        border-color: #FF0000;
+    }
+    50% {
+        border-color: #00FF00;
+    }
+    75% {
+        border-color: #0000FF;
+    }
+    100% {
+        border-color: #CA2DCA;
+    }
+}
+
+.btn-1 {
+    position: absolute;
+    padding: 10px 50px;
+    border: 1px solid #CA2DCA;
+    border-radius: 25px;
+    color: #c4c4c4;
+    text-decoration: none;
+    margin-top: 5px;
+    right: 100px;
+    animation: borderColorChange 4s infinite;
+}
